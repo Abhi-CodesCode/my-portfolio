@@ -13,7 +13,8 @@
                         </div>
                         <div class="w-3/4 pl-4">
                             <h3 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary lg:text-xl">
-                                {{ element.school }}
+                                {{ element.school }} 
+                                <!-- <span class="text-gray-300 text-xs">, {{ element.city }}</span> -->
                             </h3>
                             <p class=" text-white">{{ element.program }}</p>
                             <p class=" text-white">{{ element.year }}</p>
@@ -29,7 +30,20 @@
                 <p class="text-base lg:text-lg mt-8 py-8">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio soluta, doloremque delectus aliquam magni qui architecto aperiam modi omnis suscipit, eos assumenda fugit. Et corporis facere repellat harum, sit cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum magnam facilis, temporibus officia ipsam repudiandae? Impedit, voluptatibus ex sequi, assumenda quo minus sint consectetur velit inventore, odit sed quae?
                 </p>
-                <div class="grid"></div>
+                <div class="grid grid-cols-3 gap-4 max-w-lg pt-4">
+                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+200</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Happy Client</p>
+                    </div>
+                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+300</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Project</p>
+                    </div>
+                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+2</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Years Experience</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -41,6 +55,7 @@ const education = ref([
     {
         id:1,
         school:'Lovely Professional University',
+        city:'Punjab',
         program:'Bachelors in Computer Applications',
         year:'2025'
     },
@@ -48,6 +63,7 @@ const education = ref([
         id:2,
         school:'Lucknow Public College',
         program:'Senior Secondary',
+        city:'Lucknow',
         year:'2022'
     },
 
